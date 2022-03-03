@@ -1,3 +1,3 @@
 #!/usr/bin/python
 print ("Hello, World!")
-print ("build number {BUILD_NAME}")
+print ("build number {env_build}")

@@ -3,5 +3,5 @@ WORKDIR /web
 COPY . /web
 ARG build=test
 ENV env_build=$build
-EXPOSE 5000
+RUN pip install flask
 ENTRYPOINT ["python3", "./app/run.py", "env_build"]

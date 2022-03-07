@@ -1,6 +1,6 @@
 FROM python:3.8-alpine
-WORKDIR /web
-COPY . /web
+WORKDIR /myweb
+COPY . .
 ARG build=test
 ENV env_build=$build
 RUN pip install flask
